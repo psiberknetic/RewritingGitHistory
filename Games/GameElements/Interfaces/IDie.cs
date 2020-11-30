@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameElements.Interfaces
 {
-	interface IDie
+	public interface IDie
 	{
 		int Sides { get; }
 		int Value { get; }
