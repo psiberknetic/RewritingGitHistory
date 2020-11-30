@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameElements", "GameElements\GameElements.csproj", "{4EE7654F-C24C-4B6E-A3F6-3B8FEDFB71C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameElements", "GameElements\GameElements.csproj", "{4EE7654F-C24C-4B6E-A3F6-3B8FEDFB71C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic\GameLogic.csproj", "{A562F20B-6B5E-4CA5-92D6-BABAE1193ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameLogic", "GameLogic\GameLogic.csproj", "{A562F20B-6B5E-4CA5-92D6-BABAE1193ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicTests", "GameLogicTests\GameLogicTests.csproj", "{47347AA2-68F6-4188-BE87-724738C7B2DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A562F20B-6B5E-4CA5-92D6-BABAE1193ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A562F20B-6B5E-4CA5-92D6-BABAE1193ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A562F20B-6B5E-4CA5-92D6-BABAE1193ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47347AA2-68F6-4188-BE87-724738C7B2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47347AA2-68F6-4188-BE87-724738C7B2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47347AA2-68F6-4188-BE87-724738C7B2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47347AA2-68F6-4188-BE87-724738C7B2DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
