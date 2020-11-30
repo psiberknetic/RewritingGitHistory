@@ -13,7 +13,7 @@ namespace GameElements
 		{
 			_sides = sides;
 
-			_value = _roller.Next(1, _sides + 1);
+			Roll();
 		}
 
 		public int Sides => _sides;
@@ -22,7 +22,9 @@ namespace GameElements
 
 		public int Roll()
 		{
-			throw new NotImplementedException();
+			_value = _roller.Next(1, _sides + 1);
+
+			return Value;
 		}
 	}
 }
