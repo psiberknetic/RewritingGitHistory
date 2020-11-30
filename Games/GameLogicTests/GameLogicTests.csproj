@@ -15,4 +15,9 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameElements\GameElements.csproj" />
+    <ProjectReference Include="..\GameLogic\GameLogic.csproj" />
+  </ItemGroup>
+
 </Project>
