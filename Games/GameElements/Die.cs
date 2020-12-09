@@ -5,7 +5,14 @@ namespace GameElements
 {
 	public class Die : IDie
 	{
-		public int Sides => throw new NotImplementedException();
+		readonly int _sdies;
+
+		public Die(int sides)
+		{
+			_sdies = sides;
+		}
+
+		public int Sides => _sdies;
 
 		public int Value => throw new NotImplementedException();
 
