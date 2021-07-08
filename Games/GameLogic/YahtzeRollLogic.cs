@@ -65,5 +65,15 @@ namespace GameLogic
 			throw new ArgumentException("Not a valid Yahtze roll", nameof(dice));
 		}
 
+		public static bool IsFullHouse(this IEnumerable<IDie> dice)
+		{
+			if (dice.IsValidYahtzeRoll())
+			{
+				return dice.GroupBy(d => d.Value).Count() == 2;
+			}
+
+			throw new ArgumentException("Not a valid Yahtze roll", nameof(dice));
+		}
+
 	}
 }
