@@ -158,6 +158,36 @@ namespace GameLogicTests
 			dice.IsSmallStraight().Should().BeFalse();
 		}
 
+		[TestMethod]
+		public void RollsWithAPairAndATrio_IsFullHouse()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,5),
+				CreateMockDie(6,5),
+				CreateMockDie(6,5),
+				CreateMockDie(6,2),
+				CreateMockDie(6,2)
+			};
+
+			dice.IsFullHouse().Should().BeTrue();
+		}
+
+		[TestMethod]
+		public void RollsWithoutAPairAndATrio_NotAFullHouse()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,5),
+				CreateMockDie(6,2),
+				CreateMockDie(6,3),
+				CreateMockDie(6,4),
+				CreateMockDie(6,2)
+			};
+
+			dice.IsFullHouse().Should().BeFalse();
+		}
+
 		private IDie CreateMockDie(int sides)
 		{
 			return CreateMockDie(sides, 1);
