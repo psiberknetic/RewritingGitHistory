@@ -55,5 +55,15 @@ namespace GameLogic
 
 			throw new ArgumentException("Not a valid Yahtze roll", nameof(dice));
 		}
+		public static bool IsChance(this IEnumerable<IDie> dice)
+		{
+			if (dice.IsValidYahtzeRoll())
+			{
+				return true;
+			}
+
+			throw new ArgumentException("Not a valid Yahtze roll", nameof(dice));
+		}
+
 	}
 }
