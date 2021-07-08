@@ -39,6 +39,36 @@ namespace GameLogicTests
 		}
 
 		[TestMethod]
+		public void RollsWithAllTheSameNumber_IsAYahzte()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,1),
+				CreateMockDie(6,1),
+				CreateMockDie(6,1),
+				CreateMockDie(6,1),
+				CreateMockDie(6,1)
+			};
+
+			dice.IsYahtze().Should().BeTrue();
+		}
+
+		[TestMethod]
+		public void RollsWithDifferentNumbers_IsNotAYahzte()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,1),
+				CreateMockDie(6,1),
+				CreateMockDie(6,3),
+				CreateMockDie(6,1),
+				CreateMockDie(6,1)
+			};
+
+			dice.IsYahtze().Should().BeFalse();
+		}
+
+		[TestMethod]
 		public void RollsWithFiveDifferentValues_IsALargeStraight()
 		{
 			var dice = new[]
