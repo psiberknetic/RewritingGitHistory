@@ -68,6 +68,66 @@ namespace GameLogicTests
 			dice.IsLargeStraight().Should().BeFalse();
 		}
 
+		[TestMethod]
+		public void RollsWith1234_IsSmallStraight()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,1),
+				CreateMockDie(6,2),
+				CreateMockDie(6,3),
+				CreateMockDie(6,4),
+				CreateMockDie(6,1)
+			};
+
+			dice.IsSmallStraight().Should().BeTrue();
+		}
+
+		[TestMethod]
+		public void RollsWith2345_IsSmallStraight()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,5),
+				CreateMockDie(6,2),
+				CreateMockDie(6,3),
+				CreateMockDie(6,4),
+				CreateMockDie(6,2)
+			};
+
+			dice.IsSmallStraight().Should().BeTrue();
+		}
+
+		[TestMethod]
+		public void RollsWith3456_IsSmallStraight()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,5),
+				CreateMockDie(6,1),
+				CreateMockDie(6,3),
+				CreateMockDie(6,4),
+				CreateMockDie(6,6)
+			};
+
+			dice.IsSmallStraight().Should().BeTrue();
+		}
+
+		[TestMethod]
+		public void RollsWith11265_IsNotSmallStraight()
+		{
+			var dice = new[]
+			{
+				CreateMockDie(6,1),
+				CreateMockDie(6,1),
+				CreateMockDie(6,2),
+				CreateMockDie(6,5),
+				CreateMockDie(6,6)
+			};
+
+			dice.IsSmallStraight().Should().BeFalse();
+		}
+
 		private IDie CreateMockDie(int sides)
 		{
 			return CreateMockDie(sides, 1);
