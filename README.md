@@ -8,6 +8,11 @@ Many of the examples i'll be demoning will be squashing commits together. In ord
 
 `git config --global rebase.autosquash true`
 
+### Some Aliases you'll see
+`new = log --oneline --reverse master..`
+`rbc = rebase --continue`
+`rba = rebase --abort`
+
 ### Tech I'll be Using
 
 During this demo I'll be using the following technology. You don't have to use these technologies, but they're currently my preferred tools
