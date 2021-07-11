@@ -9,7 +9,7 @@ Many of the examples i'll be demoning will be squashing commits together. In ord
 `git config --global rebase.autosquash true`
 
 ### Some Aliases you'll see
-`new = log --oneline --reverse master..`
+`new = log --oneline --reverse main..`
 
 `rbc = rebase --continue`
 
