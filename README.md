@@ -10,7 +10,9 @@ Many of the examples i'll be demoning will be squashing commits together. In ord
 
 ### Some Aliases you'll see
 `new = log --oneline --reverse master..`
+
 `rbc = rebase --continue`
+
 `rba = rebase --abort`
 
 ### Tech I'll be Using
