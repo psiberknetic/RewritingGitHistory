@@ -10,18 +10,27 @@ Many of the examples i'll be demoning will be squashing commits together. In ord
 
 ### Some Aliases you'll see
 
-I like aliases. I like aliases a lot. In this demo, I won't use many of them, but there are a couple I will. These are down below. Feel free to add them to your global config if you like them.
+I like aliases. I like aliases a lot. In this demo, I won't use many of them, but there are a couple I will. These are down below. Feel free to use them if you like them.
 
-new - gets the commits since last merged to main in one line and reverse order
-: `new = log --oneline --reverse main..`
+#### new 
+Gets the commits since last merge to main in one line and reverse order (if your repo uses master instead of main, change main to master in the line below)
+ 
+ `git config --global alias.new log --oneline --reverse main..`
 
-`rbc = rebase --continue`
+#### rbc
+Alias for git rebase --continue
 
-`rba = rebase --abort`
+`git config --global alias.rbc rebase --continue`
+
+#### rba
+Alias for git rebase --abort
+
+`git config --global alias.rba rebase --abort`
 
 ### Tech I'll be Using
 
 During this demo I'll be using the following technology. You don't have to use these technologies, but they're currently my preferred tools
 - PoshGit
 - C#
-- Beyond Compare
+- Diff/Merge tool: Beyond Compare
+- Editor: VSCode
