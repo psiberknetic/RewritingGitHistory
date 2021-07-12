@@ -9,7 +9,11 @@ Many of the examples i'll be demoning will be squashing commits together. In ord
 `git config --global rebase.autosquash true`
 
 ### Some Aliases you'll see
-`new = log --oneline --reverse main..`
+
+I like aliases. I like aliases a lot. In this demo, I won't use many of them, but there are a couple I will. These are down below. Feel free to add them to your global config if you like them.
+
+new - gets the commits since last merged to main in one line and reverse order
+: `new = log --oneline --reverse main..`
 
 `rbc = rebase --continue`
 
