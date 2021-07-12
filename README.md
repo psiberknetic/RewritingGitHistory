@@ -15,17 +15,17 @@ I like aliases. I like aliases a lot. In this demo, I won't use many of them, bu
 #### new 
 Gets the commits since last merge to main in one line and reverse order (if your repo uses master instead of main, change main to master in the line below)
  
- `git config --global alias.new log --oneline --reverse main..`
+ `git config --global alias.new 'log --oneline --reverse main..'`
 
 #### rbc
 Alias for git rebase --continue
 
-`git config --global alias.rbc rebase --continue`
+`git config --global alias.rbc 'rebase --continue'`
 
 #### rba
 Alias for git rebase --abort
 
-`git config --global alias.rba rebase --abort`
+`git config --global alias.rba 'rebase --abort'`
 
 ### Tech I'll be Using
 
