@@ -31,6 +31,6 @@ Alias for git rebase --abort
 
 During this demo I'll be using the following technology. You don't have to use these technologies, but they're currently my preferred tools
 - PoshGit
-- C#
+- C# in Visual Studio
 - Diff/Merge tool: Beyond Compare
 - Editor: VSCode
