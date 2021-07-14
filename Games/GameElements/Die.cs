@@ -7,10 +7,13 @@ namespace GameElements
 	{
 		private readonly int _sides;
 		private int _value;
+		private static Random _roller = new Random();
 
 		public Die(int sides)
 		{
 			_sides = sides;
+
+			Roll();
 		}
 
 		public int Sides => _sides;
@@ -19,7 +22,9 @@ namespace GameElements
 
 		public int Roll()
 		{
-			throw new NotImplementedException();
+			_value = _roller.Next(1, _sides + 1);
+
+			return Value;
 		}
 	}
 }
