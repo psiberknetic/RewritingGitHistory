@@ -6,6 +6,7 @@ namespace GameElements
 	public class Die : IDie
 	{
 		private readonly int _sides;
+		private int _value;
 
 		public Die(int sides)
 		{
@@ -14,7 +15,7 @@ namespace GameElements
 
 		public int Sides => _sides;
 
-		public int Value => throw new NotImplementedException();
+		public int Value => _value;
 
 		public int Roll()
 		{
